@@ -26,23 +26,23 @@ const main = async () => {
         observable: true,
         forms: [
           {
-            href: 'http://192.168.0.247:8080/mycounter/properties/count',
+            href: 'http://localhost:8080/mycounter/properties/count',
             contentType: 'application/json',
             op: ['readproperty', 'writeproperty'],
           },
           {
-            href: 'http://192.168.0.247:8080/mycounter/properties/count/observable',
+            href: 'http://localhost:8080/mycounter/properties/count/observable',
             contentType: 'application/json',
             op: ['observeproperty', 'unobserveproperty'],
             subprotocol: 'longpoll',
           },
           {
-            href: 'http://192.168.0.247:8080/mycounter/properties/count',
+            href: 'http://localhost:8080/mycounter/properties/count',
             contentType: 'application/cbor',
             op: ['readproperty', 'writeproperty'],
           },
           {
-            href: 'http://192.168.0.247:8080/mycounter/properties/count/observable',
+            href: 'http://localhost:8080/mycounter/properties/count/observable',
             contentType: 'application/cbor',
             op: ['observeproperty', 'unobserveproperty'],
             subprotocol: 'longpoll',
@@ -120,12 +120,12 @@ const main = async () => {
     id: 'urn:dev:test:MyCounter',
     forms: [
       {
-        href: 'http://192.168.0.247:8080/mycounter/properties',
+        href: 'http://localhost:8080/mycounter/properties',
         contentType: 'application/json',
         op: ['readallproperties', 'readmultipleproperties', 'writeallproperties', 'writemultipleproperties'],
       },
       {
-        href: 'http://192.168.0.247:8080/mycounter/properties',
+        href: 'http://localhost:8080/mycounter/properties',
         contentType: 'application/cbor',
         op: ['readallproperties', 'readmultipleproperties', 'writeallproperties', 'writemultipleproperties'],
       },
